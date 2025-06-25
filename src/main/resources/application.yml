@@ -1,4 +1,5 @@
 spring:
+  static-path-pattern: /static/**
   config:
     import: security-variables.yml
   datasource:
