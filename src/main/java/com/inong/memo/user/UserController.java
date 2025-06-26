@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping("/user")
 @Controller
+//view를 위한 컨트롤러
 public class UserController {
 
 	@GetMapping("/join-view")
