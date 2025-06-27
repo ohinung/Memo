@@ -21,6 +21,28 @@
 			,#{email})	
 			
 	</insert>
+	
+	
+	<select id = "selectUser"
+			parameterType="map"
+			resultType = "com.inong.memo.user.domain.User">
+			
+			SELECT 
+				`id`
+				,`loginId`
+				,`password`
+				,`name`
+				,`email`
+				,`createdAt`
+				,`updatedAt`
+			FROM
+				`user`
+			WHERE
+				`loginId`= #{loginiId}
+				AND `password` = #{password}		
+			
+			
+	</select>
 
 
 </mapper>
